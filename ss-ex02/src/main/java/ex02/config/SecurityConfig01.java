@@ -21,7 +21,7 @@ import ex02.filter.MySecurityFilter04;
 public class SecurityConfig01 {
 
 	@Bean
-	public FilterChainProxy SpringSecurityFilterChain() {
+	public FilterChainProxy springSecurityFilterChain() {
 		List<SecurityFilterChain> securityFilterChains = Arrays.asList(
 				new SecurityFilterChain() {
 					public boolean matches(HttpServletRequest request) {

@@ -19,7 +19,7 @@ import ex02.filter.MySecurityFilter04;
 public class SecurityConfig03 {
 
 	@Bean
-	public FilterChainProxy SpringSecurityFilterChain() {
+	public FilterChainProxy springSecurityFilterChain() {
 		List<SecurityFilterChain> securityFilterChains = Arrays.asList(
 				new DefaultSecurityFilterChain(new AntPathRequestMatcher("/assets/**")),
 				new DefaultSecurityFilterChain(new AntPathRequestMatcher("/**"),
